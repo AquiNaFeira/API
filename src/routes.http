@@ -1,0 +1,189 @@
+###
+
+GET http://localhost:3333/usuario/lista-usuarios
+
+
+###
+
+POST  http://localhost:3333/usuario/registro
+Content-Type: application/json
+
+{
+  "email": "joao.silva@example.com",
+  "senha": "senhaSegura123",
+  "tipo": "CLIENTE"
+}
+
+###
+
+POST http://localhost:3333/usuario/login
+Content-Type: application/json
+
+{
+  "email": "joao.silva@example.com",
+  "senha": "senhaSegura123"
+}
+
+###
+
+POST http://localhost:3333/cliente/cadastro
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "cpf": "12345678901",
+  "dataNascimento": "1995-06-15",
+  "genero": "MASCULINO",
+  "telefone": "81999998888",
+  "interesses": ["CAMISA", "CALCA", "COMIDA"],
+  "usuarioId": "2819268d-53be-4b4a-9689-4b8efefd5541"
+}
+
+###
+
+GET http://localhost:3333/cliente/lista-clientes
+
+###
+
+GET http://localhost:3333/cliente/meu-perfil/2819268d-53be-4b4a-9689-4b8efefd5541
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4MTkyNjhkLTUzYmUtNGI0YS05Njg5LTRiOGVmZWZkNTU0MSIsInRpcG8iOiJDTElFTlRFIiwiaWF0IjoxNzQ2MzA3NDMxLCJleHAiOjE3NDYzMTEwMzF9.4qNmA3kDgTXOvInHYQCrW9-AW9FDIdssc9P6rVedqU0
+
+###
+
+DELETE http://localhost:3333/cliente/deletar-cliente/4eaab1bd-8702-48f9-b43f-abda5335aa14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOiI0ZWFhYjFiZC04NzAyLTQ4ZjktYjQzZi1hYmRhNTMzNWFhMTQiLCJ0aXBvIjoiQ0xJRU5URSIsImlhdCI6MTc0NjMwNDkwOCwiZXhwIjoxNzQ2MzA4NTA4fQ.TCt8v5w4m8NAlllTRzQgT4FTmWfFtmopyyjESc1sS1Q
+###
+
+PATCH http://localhost:3333/cliente/atualizar-cliente/4eaab1bd-8702-48f9-b43f-abda5335aa14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOiI0ZWFhYjFiZC04NzAyLTQ4ZjktYjQzZi1hYmRhNTMzNWFhMTQiLCJ0aXBvIjoiQ0xJRU5URSIsImlhdCI6MTc0NjMwNDkwOCwiZXhwIjoxNzQ2MzA4NTA4fQ.TCt8v5w4m8NAlllTRzQgT4FTmWfFtmopyyjESc1sS1Q
+
+{
+  "nome": "José"
+}
+
+###
+
+POST  http://localhost:3333/usuario/registro
+Content-Type: application/json
+
+{
+  "email": "maria.feira@example.com",
+  "senha": "coxinha123",
+  "tipo": "FEIRANTE"
+}
+
+
+###
+POST http://localhost:3333/usuario/login
+Content-Type: application/json
+
+{
+  "email": "maria.feira@example.com",
+  "senha": "coxinha123"
+}
+
+###
+POST http://localhost:3333/feirante/cadastro
+Content-Type: application/json
+
+{
+  "nomeProprietario": "MARIA DA FEIRA",
+  "cadastroAssosiacao": "123456",
+  "cpfCnpj": "12345678900",
+  "telefone": "81988888888",
+  "linkWhatsapp": "https://wa.me/5581999999999",
+  "linkInstagram": "https://instagram.com/joao_feira",
+  "linkFacebook": "https://facebook.com/joao_feira",
+  "usuarioId": "78ad40d8-97fb-4127-bdeb-24f97ccd4839",
+  "bancos": [
+    {
+      "nomeMarca": "Banco da Feira",
+      "foto": "https://imgur.com/exemplo.png",
+      "horario": "08:00 às 17:00",
+      "descricao": "Vendemos frutas e legumes frescos",
+      "tipoProdutos": ["COMIDA", "NATUREZA"],
+      "endereco": {
+        "rua": "Rua da Feira",
+        "setor": "Setor Laranja",
+        "numero": "10",
+        "latitude": -8.2833,
+        "longitude": -35.975
+      }
+    }
+  ]
+}
+
+###
+
+GET http://localhost:3333/feirante/meu-perfil/f8ee04ca-4fd3-4ff9-86d4-c964abadd440
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZWUwNGNhLTRmZDMtNGZmOS04NmQ0LWM5NjRhYmFkZDQ0MCIsInRpcG8iOiJGRUlSQU5URSIsImlhdCI6MTc0NjMxNzIyNSwiZXhwIjoxNzQ2MzIwODI1fQ.eo0o4xnR7knek8_x3uZeXQU61P9eaaPWm1nWGSagRP8
+
+###
+
+PATCH http://localhost:3333/feirante/atualizar-feirante/f8ee04ca-4fd3-4ff9-86d4-c964abadd440
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZWUwNGNhLTRmZDMtNGZmOS04NmQ0LWM5NjRhYmFkZDQ0MCIsInRpcG8iOiJGRUlSQU5URSIsImlhdCI6MTc0NjMxNzIyNSwiZXhwIjoxNzQ2MzIwODI1fQ.eo0o4xnR7knek8_x3uZeXQU61P9eaaPWm1nWGSagRP8
+
+{
+  "nomeProprietario": "Maria do Bairro"
+}
+
+###
+
+DELETE http://localhost:3333/feirante/deletar-feirante/fee87004-a48d-4f1a-8247-b5ac65a47a67
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlZTg3MDA0LWE0OGQtNGYxYS04MjQ3LWI1YWM2NWE0N2E2NyIsInRpcG8iOiJGRUlSQU5URSIsImlhdCI6MTc0NjMxNzk2MiwiZXhwIjoxNzQ2MzIxNTYyfQ.na3TrPj9RazR0BvEtVUvb9U_gNIimps4BiE9cI6YG-g
+
+###
+
+GET http://localhost:3333/banco/localizacoes
+
+###
+
+GET http://localhost:3333/banco/info-banco/8fb190cc-413c-4298-abcb-f1d17427f337
+
+###
+
+GET http://localhost:3333/banco/filtro?tipos=comida
+
+
+###
+
+POST http://localhost:3333/favoritos/favoritar-banco
+Content-Type: application/json
+
+{
+  "clienteId": "9ac420a6-73c4-488a-a1ad-75e11d1c67df",
+  "bancoId": "26df402b-ec44-4aad-87b5-494ad9419932"
+}
+
+###
+
+GET http://localhost:3333/favoritos/listar-favoritos/9ac420a6-73c4-488a-a1ad-75e11d1c67df
+
+
+###
+
+DELETE http://localhost:3333/favoritos
+Content-Type: application/json
+
+{
+  "clienteId": "0967f337-07e3-4e46-a201-658aa4185097",
+  "bancoId": "9901549a-1d33-45c7-9dde-da15b7cfe3bb"
+}
+
+###
+
+POST http://localhost:3333/avaliacao/avaliar-banco
+Content-Type: application/json
+
+{
+  "clienteId": "3a6de504-90e7-428d-b071-22cfea4d4038",
+  "bancoId": "8fb190cc-413c-4298-abcb-f1d17427f337",
+  "nota": 4,
+  "comentario": "daora ate"
+}
+
+###
+
+GET http://localhost:3333/avaliacao/mostrar-avaliacoes/26df402b-ec44-4aad-87b5-494ad9419932
