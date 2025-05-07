@@ -1,4 +1,4 @@
-# 🛍️ API - Aqui na Feira
+# ⚙️💻 API - Aqui na Feira
 
 API desenvolvida para o aplicativo **Aqui na Feira**, que visa conectar consumidores e feirantes da Feira de Caruaru. O sistema facilita a localização dos bancos dos feirantes, o gerenciamento de usuários, favoritos e avaliações.
 
@@ -62,53 +62,69 @@ npm run start
 
 ## ▶️ Como usar
 
-Após iniciar, a API estará disponível em `http://localhost:3000`. Use ferramentas como Postman ou Insomnia para testar os endpoints.
-Ou, utilize a extensão do VSCode, a REST Client
+Após iniciar, a API estará disponível em `http://localhost:3000`. Use ferramentas como Postman ou Insomnia para testar os endpoints. Ou, utilize a extensão do VSCode, a REST Client
 
 ---
 
 ## 📡 Rotas da API
 
+## 📡 Rotas da API
+
 ### 🔐 Autenticação
 
-| Método | Rota           | Descrição               |
-|--------|----------------|-------------------------|
-| POST   | /auth/register | Registro de novo usuário|
-| POST   | /auth/login    | Login e retorno de token|
+| Método | Rota          | Descrição                |
+|--------|---------------|--------------------------|
+| POST   | /registro     | Registro de novo usuário |
+| POST   | /login        | Login e retorno de token |
 
 ### 👤 Usuários
 
-| Método | Rota      | Descrição                  |
-|--------|-----------|----------------------------|
-| GET    | /usuarios | Lista os usuários cadastrados |
+| Método | Rota             | Descrição                     |
+|--------|------------------|-------------------------------|
+| GET    | /lista-usuarios  | Lista os usuários cadastrados |
 
 ### 🧑‍🌾 Feirantes
 
-| Método | Rota           | Descrição                   |
-|--------|----------------|-----------------------------|
-| POST   | /feirantes     | Cadastro de feirante        |
-| GET    | /feirantes     | Lista todos os feirantes    |
-| GET    | /feirantes/:id | Detalhes de um feirante     |
+| Método | Rota                        | Descrição                          |
+|--------|-----------------------------|------------------------------------|
+| POST   | /cadastro                   | Cadastro de feirante               |
+| GET    | /lista-feirantes            | Lista todos os feirantes           |
+| GET    | /meu-perfil/:id             | Exibe perfil do feirante           |
+| PATCH  | /atualizar-feirante/:id     | Atualiza dados do feirante         |
+| DELETE | /deletar-feirante/:id       | Remove perfil do feirante          |
 
-### 💳 Bancos
+### 👥 Clientes
 
-| Método | Rota       | Descrição                    |
-|--------|------------|------------------------------|
-| POST   | /bancos    | Cadastra dados bancários     |
-| GET    | /bancos    | Lista dados bancários        |
+| Método | Rota                         | Descrição                          |
+|--------|------------------------------|------------------------------------|
+| POST   | /cadastro                    | Cadastro de cliente                |
+| GET    | /lista-clientes              | Lista todos os clientes            |
+| GET    | /meu-perfil/:id              | Exibe perfil do cliente            |
+| PATCH  | /atualizar-cliente/:id       | Atualiza dados do cliente          |
+| DELETE | /deletar-cliente/:id         | Remove perfil do cliente           |
 
-### 📍 Geolocalização
+### 🛍️ Bancos
 
-| Método | Rota             | Descrição                             |
-|--------|------------------|---------------------------------------|
-| GET    | /feirantes/geo   | Lista feirantes com localização       |
+| Método | Rota                | Descrição                          |
+|--------|---------------------|------------------------------------|
+| GET    | /localizacoes       | Lista localizações de bancos       |
+| GET    | /info-banco/:id     | Exibe informações de um banco      |
+| GET    | /filtro             | Filtra bancos com base em critérios|
 
 ### ⭐ Favoritos
 
-| Método | Rota        | Descrição                        |
-|--------|-------------|----------------------------------|
-| POST   | /favoritos  | Adiciona feirante aos favoritos  |
-| GET    | /favoritos  | Lista favoritos do usuário logado|
+| Método | Rota                        | Descrição                          |
+|--------|-----------------------------|------------------------------------|
+| POST   | /favoritar-banco            | Adiciona banco aos favoritos       |
+| GET    | /listar-favoritos/:id       | Lista favoritos do usuário         |
+| DELETE | /deletar-favorito           | Remove banco dos favoritos         |
+
+### 🌟 Avaliações
+
+| Método | Rota                        | Descrição                          |
+|--------|-----------------------------|------------------------------------|
+| POST   | /avaliar-banco              | Avalia um banco                    |
+| GET    | /mostrar-avaliacoes/:id     | Mostra avaliações de um banco      |
 
 ---
 
