@@ -68,8 +68,6 @@ Após iniciar, a API estará disponível em `http://localhost:3000`. Use ferrame
 
 ## 📡 Rotas da API
 
-## 📡 Rotas da API
-
 ### 🔐 Autenticação
 
 | Método | Rota          | Descrição                |
