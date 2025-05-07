@@ -65,7 +65,6 @@ export class BancoController {
             select: {
               nota: true,
               comentario: true
-              //Calcular média de nota...
             }
           }
         }
@@ -75,7 +74,12 @@ export class BancoController {
         throw new AppError("Banco não encontrado", 404)
       }
 
-      res.status(200).json(BancoInfo);
+      const mediaNotas = calcularMedia(BancoInfo.avaliacoes)
+
+      res.status(200).json({
+        ...BancoInfo,
+        mediaNotas: mediaNotas.toFixed(2)
+      });
 
     }catch(error){
       next(error)
