@@ -7,6 +7,8 @@ const feiranteController = new FeiranteController
 
 FeiranteRoutes.post("/cadastro", feiranteController.CriarFeirante)
 
+FeiranteRoutes.get("/lista-feirantes", feiranteController.ListarFeirantes)
+
 FeiranteRoutes.use(verificarToken)
 
 FeiranteRoutes.get("/meu-perfil/:id", feiranteController.BuscarFeiranteID) 

@@ -158,6 +158,6 @@ export class BancoController {
     }catch(error){
       next(error)
     }
-  }
+  };
 
 }

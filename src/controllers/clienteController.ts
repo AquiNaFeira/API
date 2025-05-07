@@ -8,8 +8,6 @@ import { gerarToken } from "../utils/gerarToken";
 
 export class ClienteController {
 
-//Não precisa da verificação de Token
-
   async CadastrarCliente(req: Request, res: Response, next: NextFunction) {
     try{
 
@@ -33,28 +31,6 @@ export class ClienteController {
       next(error);
     }
   };
-
-  async ListarClientes(req: Request, res: Response, next: NextFunction) {
-    try {
-
-      const Clientes = await prisma.cliente.findMany(
-        {
-          select: {
-            id: true,
-            nome: true
-          }
-        }
-      );
-
-      res.status(200).json(Clientes);
-
-    } catch(error){
-      next(error)
-    };
-  
-  };
-
-//Verificação de Token
 
   async AtualizarCliente(req: Request, res: Response, next: NextFunction){
 
@@ -131,6 +107,26 @@ export class ClienteController {
     } catch (error) {
       next(error)
     }
+  };
+
+  async ListarClientes(req: Request, res: Response, next: NextFunction) {
+    try {
+
+      const Clientes = await prisma.cliente.findMany(
+        {
+          select: {
+            id: true,
+            nome: true
+          }
+        }
+      );
+
+      res.status(200).json(Clientes);
+
+    } catch(error){
+      next(error)
+    };
+
   };
 
   async BuscarClienteID(req: Request, res: Response, next: NextFunction) {

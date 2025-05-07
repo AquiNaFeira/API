@@ -5,7 +5,7 @@ import { AppError } from "../utils/appError";
 import { gerarToken } from "../utils/gerarToken";
 
 export class FeiranteController {
-  //Não precisa de verificação de token
+
   async CriarFeirante(req: Request, res: Response, next: NextFunction) {
     try{
 
@@ -43,7 +43,7 @@ export class FeiranteController {
      next(error)
     }
   };
-  //Precisa de verificação de token
+
   async AtualizarFeirante(req: Request, res: Response, next: NextFunction) {
 
     const usuarioLogado = req.usuario!;
@@ -111,6 +111,32 @@ export class FeiranteController {
     } catch (error) {
       next(error)
     }
+  };
+
+  async ListarFeirantes(req: Request, res: Response, next: NextFunction) {
+    try {
+
+      const Feirantes = await prisma.feirante.findMany(
+        {
+          select: {
+            id: true,
+            nomeProprietario: true,
+            bancos: {
+              select: {
+                nomeMarca: true,
+                endereco: true
+              }
+            }
+          }
+        }
+      );
+
+      res.status(200).json(Feirantes);
+
+    } catch(error){
+      next(error)
+    };
+
   };
 
   async BuscarFeiranteID(req: Request, res: Response, next: NextFunction) {
