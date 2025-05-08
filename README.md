@@ -138,4 +138,4 @@ Authorization: Bearer SEU_TOKEN
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a [Apache-2.0](LICENSE).
+Este projeto está licenciado sob a [MIT License](LICENSE).
