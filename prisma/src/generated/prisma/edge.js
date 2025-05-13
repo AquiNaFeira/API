@@ -240,11 +240,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://AquiNaFeira_owner:npg_mTIhRYl0fX4W@ep-late-butterfly-acccrlhc-pooler.sa-east-1.aws.neon.tech/AquiNaFeira?sslmode=require"
+        "value": null
       }
     }
   },
