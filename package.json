@@ -16,7 +16,11 @@
   },
   "scripts": {
     "start": "tsx watch src/server.ts",
-    "dev": "ts-node-dev --respawn src/server.ts"
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "seed": "tsx prisma/seed.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
@@ -24,6 +28,7 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.14.1",
     "prisma": "^6.7.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }

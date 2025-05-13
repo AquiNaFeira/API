@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { prisma } from "../config/db";
 import { AppError } from "../utils/appError";
-import { string } from "zod";
 import { calcularMedia } from "../utils/calcularNotas";
 
 export class BancoController {
