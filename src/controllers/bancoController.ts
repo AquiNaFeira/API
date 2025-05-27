@@ -8,6 +8,7 @@ export class BancoController {
     try{
       const CoordenadasBancos = await prisma.banco.findMany({
         select: {
+          id: true,
           nomeMarca: true,
           endereco: {
             select: {
