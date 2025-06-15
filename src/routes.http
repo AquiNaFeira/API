@@ -20,8 +20,8 @@ POST http://localhost:3333/usuario/login
 Content-Type: application/json
 
 {
-  "email": "joao.silva@example.com",
-  "senha": "senhaSegura123"
+  "email": "cliente1@email.com",
+  "senha": "senha123"
 }
 
 ###
@@ -140,7 +140,7 @@ GET http://localhost:3333/banco/localizacoes
 
 ###
 
-GET http://localhost:3333/banco/info-banco/8fb190cc-413c-4298-abcb-f1d17427f337
+GET http://localhost:3333/banco/info-banco/24ed9603-5d77-4657-84dd-e47fb9dae070
 
 ###
 
@@ -176,12 +176,13 @@ Content-Type: application/json
 
 POST http://localhost:3333/avaliacao/avaliar-banco
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExN2M0OTI2LTlkMTgtNDA3Yi05YmUyLTNkY2YzNGY3ZTBmOSIsInRpcG8iOiJDTElFTlRFIiwiaWF0IjoxNzUwMDI1MDA1LCJleHAiOjE3NTAwNjgyMDV9.BoY7PewuxLv2p33S0Tt0CJqSxYlN6KbaEnhUvw_fwlo
 
 {
-  "clienteId": "3a6de504-90e7-428d-b071-22cfea4d4038",
-  "bancoId": "8fb190cc-413c-4298-abcb-f1d17427f337",
+  "clienteId": "d19e0b76-67ae-44c4-9958-ea7e6b519782",
+  "bancoId": "a5cee493-c9b5-471c-8427-db1368926420",
   "nota": 4,
-  "comentario": "daora ate"
+  "comentario": "Legal até!"
 }
 
 ###

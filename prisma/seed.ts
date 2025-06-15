@@ -95,7 +95,7 @@ async function main() {
             linkFacebook: "https://facebook.com/joaodafeira",
             banco: {
             nomeMarca: "Banca do João",
-            foto: "https://unsplash.com/pt-br/fotografias/assorted-fruits-at-the-market--gOUx23DNks",
+            foto: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             horario: "08:00 às 17:00",
             descricao: "Vende frutas frescas e regionais.",
             tipoProdutos: [Opcs.COMIDA, Opcs.NATUREZA,],
@@ -118,7 +118,7 @@ async function main() {
             linkFacebook: "https://facebook.com/mariaartesa",
             banco: {
             nomeMarca: "Artes da Maria",
-            foto: "https://unsplash.com/pt-br/fotografias/foto-de-closeup-da-pilha-de-lote-de-pote-de-barro-marrom-3FFO_aNa5Sc",
+            foto: "https://images.unsplash.com/photo-1474444417714-f5d07c4d6a38?q=80&w=1408&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             horario: "09:00 às 18:00",
             descricao: "Produtos artesanais e decorativos.",
             tipoProdutos: [Opcs.ACESSORIOS, Opcs.UTENSILIOS,],
@@ -141,7 +141,7 @@ async function main() {
             linkFacebook: "https://facebook.com/carloscalcados",
             banco: {
             nomeMarca: "Pé Quente",
-            foto: "https://unsplash.com/pt-br/fotografias/varios-sapatos-esportivos-coloridos-colocados-no-fundo-da-praia-de-areia-tiro-de-estudio-flat-lay-ft2UhxkefwE",
+            foto: "https://plus.unsplash.com/premium_photo-1682435561654-20d84cef00eb?q=80&w=1436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             horario: "07:30 às 16:00",
             descricao: "Venda de tênis e sapatos variados.",
             tipoProdutos: [Opcs.TENIS, Opcs.SALTO,],
@@ -164,7 +164,7 @@ async function main() {
             linkFacebook: "https://facebook.com/anabrinquedos",
             banco: {
             nomeMarca: "Mundo dos Brinquedos",
-            foto: "https://unsplash.com/pt-br/fotografias/brinquedo-branco-do-robo-vermelho-e-amarelo-rxv_1MOxasE",
+            foto: "https://images.unsplash.com/photo-1619768470847-f7db55f5d72e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             horario: "10:00 às 19:00",
             descricao: "Brinquedos educativos e divertidos.",
             tipoProdutos: [Opcs.BRINQUEDO, Opcs.INFANTIL,],
@@ -187,7 +187,7 @@ async function main() {
             linkFacebook: "https://facebook.com/pedroeletronicos",
             banco: {
             nomeMarca: "Tech Feira",
-            foto: "https://unsplash.com/pt-br/fotografias/visao-geral-da-tecnologia-de-equipamentos-eletronicos-xNdaKd32IRA",
+            foto: "https://plus.unsplash.com/premium_photo-1723921242867-42dbc213fbd1?q=80&w=1437&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             horario: "08:00 às 18:00",
             descricao: "Eletrônicos e acessórios variados.",
             tipoProdutos: [Opcs.ELETRONICOS, Opcs.ACESSORIOS,],
