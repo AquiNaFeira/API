@@ -176,13 +176,13 @@ Content-Type: application/json
 
 POST http://localhost:3333/avaliacao/avaliar-banco
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExN2M0OTI2LTlkMTgtNDA3Yi05YmUyLTNkY2YzNGY3ZTBmOSIsInRpcG8iOiJDTElFTlRFIiwiaWF0IjoxNzUwMDI1MDA1LCJleHAiOjE3NTAwNjgyMDV9.BoY7PewuxLv2p33S0Tt0CJqSxYlN6KbaEnhUvw_fwlo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImExN2M0OTI2LTlkMTgtNDA3Yi05YmUyLTNkY2YzNGY3ZTBmOSIsInRpcG8iOiJDTElFTlRFIiwiaWF0IjoxNzUwMTgxMTQzLCJleHAiOjE3NTAyMjQzNDN9.wfht2MWAI9Hr0PKpsEEPd3mXa6ThTrZ6TGjhJFFzR5M
 
 {
   "clienteId": "d19e0b76-67ae-44c4-9958-ea7e6b519782",
-  "bancoId": "a5cee493-c9b5-471c-8427-db1368926420",
-  "nota": 4,
-  "comentario": "Legal até!"
+  "bancoId": "096f533a-12fd-4091-ba38-1c63232ea4ca",
+  "nota": 2,
+  "comentario": "Não achei tantas opções!"
 }
 
 ###
