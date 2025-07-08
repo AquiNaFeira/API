@@ -38,7 +38,7 @@ Este backend fornece uma estrutura robusta para cadastro de clientes e feirantes
 
 ```bash
 # Clone o repositório
-git clone https://github.com/WyldSLA/API-AquiNaFeira.git
+git clone https://github.com/AquiNaFeira/API.git
 
 # Acesse o diretório
 cd API-AquiNaFeira
